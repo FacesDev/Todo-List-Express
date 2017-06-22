@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box
+
+}
+
+.completed {
+    font-size: 20px;
+    text-decoration:line-through;
+}
+.container {
+    display: flex;
+    justify-content:center;
+
+}
+.wrapper {
+    text-align:center;
+}
+.inputbar {
+    margin-top: 20px;
+    font-size: 20px;
+}
+button[type=submit]{
+    height:25px;
+}
+.innerDiv {
+    margin-left: 20px;
+    font-size: 20px;
+}
+.correctionDuck {
+    background-image: url("http://gph.is/1sGCCKx");
+    background-size: cover;
+    margin-top:20%;
+
+}

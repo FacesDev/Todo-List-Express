@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+      <div class="wrapper">
+        <form method="post" action="/">
+            <input class="inputbar" type"text" name="todo" placeholder="Insert Todo"/>
+            <button type="submit">Add to List</button>
+        </form>
+      
+        {{#todos}}
+        <form class="container" method="post" action="/{{.}}">
+            <button type="submit">Mark Complete</button>
+            <div class="innerDiv">{{.}}</div>
+        </form>
+        {{/todos}}
+
+        <h3>Completed Tasks</h3>
+        {{#complete}}
+        
+        <div class="completed">{{.}}<div>
+        {{/complete}}
+
+
+      </div>
+      <img src="https://media.giphy.com/media/5ZG4uADPJNZPa/giphy.gif">
+    </body>
+</html>
